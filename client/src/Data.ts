@@ -1,43 +1,18 @@
 import { EndpointData, Method } from './components/endpoint/Endpoint.interface';
 
 export const dateEndpointData: EndpointData = {
-  name: 'date',
-  description: 'Returns a JSON object with a Unix and UTC timestamp',
+  name: 'whoami',
+  description: 'Returns a JSON object with an IP address, preferred language, and user-agent of a provided request',
   methodsData: [
     {
       method: Method.GET,
-      endpoint: '/api/',
+      endpoint: '/api/whoami',
       params: [],
       codes: [
         {
           statusCode: 200,
           description: 'Successful operation',
-          sampleRes: '{ \n  "unix": 1451001600000,\n  "utc": "Fri, 25 Dec 2015 00:00:00 GMT"\n}\n'
-        }
-      ]
-    },
-    {
-      method: Method.GET,
-      endpoint: '/api/{date}',
-      params: [
-        {
-          name: 'date',
-          type: 'string',
-          apiInterface: 'path',
-          description: 'A valid javascript date',
-          sampleInput: '/api/2015-12-25'
-        },
-      ],
-      codes: [
-        {
-          statusCode: 200,
-          description: 'Successful operation',
-          sampleRes: '{ \n  "unix": 1451001600000,\n  "utc": "Fri, 25 Dec 2015 00:00:00 GMT"\n}\n'
-        },
-        {
-          statusCode: 404,
-          description: 'Invalid date provided',
-          sampleRes: '{\n  "error": "Invalid Date"\n}\n'
+          sampleRes: '{ \n  "ipaddress": "152.171.47.142",\n  "language": "en-US,en;q=0.5",\n  "software": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"\n}\n'
         }
       ]
     }
