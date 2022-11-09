@@ -29,6 +29,8 @@ class Server {
   }
 
   private middlewareConfig(): void {
+    this.app.enable('trust proxy');
+
     this.app.use(cors({ 
       origin: [
         'http://localhost:3000',
