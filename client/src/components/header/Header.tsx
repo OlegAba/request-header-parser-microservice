@@ -13,8 +13,8 @@ const Header: FunctionComponent<IHeaderProps> = (props) => {
       <a href='https://timestamp-microservice.fly.dev/api' target='_blank' rel='noopener noreferrer'>
         <code>[ Base URL: timestamp-microservice.fly.dev/api ]</code>
       </a>
-      <p>This is a sample Timestamp Microservice server</p>
-      <a href='https://github.com/OlegAba/timestamp-microservice' target='_blank' rel='noopener noreferrer'>
+      <p>This is a sample Request Header Parser Microservice server</p>
+      <a href='https://github.com/OlegAba/request-header-parser-microservice' target='_blank' rel='noopener noreferrer'>
         Source Code
       </a>
     </StyledHeader>

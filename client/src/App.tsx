@@ -36,7 +36,7 @@ class App extends Component<IProps, IState> {
         <GlobalStyles/>
           <div className='header-container'>
             <div className='max-width-container'>
-              <Header title={ 'Timestamp API' }/>
+              <Header title={ 'Request Header Parser API' }/>
             </div>
           </div>
 
