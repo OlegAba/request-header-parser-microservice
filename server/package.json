@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "server-request-header-parser-microservice",
   "version": "1.0.0",
   "description": "",
   "main": "Server.js",
@@ -9,8 +9,8 @@
     "build": "tsc -p ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Oleg Abalonski",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
