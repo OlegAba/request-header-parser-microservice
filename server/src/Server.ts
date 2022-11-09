@@ -2,6 +2,7 @@ import express, { Application, Response, Router } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
+import Routes from './api/Routes';
 
 class Server {
   public app: Application;
@@ -24,7 +25,7 @@ class Server {
   }
 
   private routesConfig(): void {
-    // this.routes.use('/api', Routes);
+    this.routes.use('/api', Routes);
   }
 
   private middlewareConfig(): void {
