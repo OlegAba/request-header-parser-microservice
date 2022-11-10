@@ -24,7 +24,7 @@
     "url": "git+https://github.com/OlegAba/request-header-parser-microservice.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oleg Abalonski",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/OlegAba/request-header-parser-microservice/issues"
